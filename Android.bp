@@ -43,6 +43,7 @@ android_app {
     optimize: {
         enabled: false,
     },
+    system_ext_specific: true,
 }
 
 cc_prebuilt_library_shared {
@@ -57,6 +58,7 @@ cc_prebuilt_library_shared {
     compile_multilib: "64",
     check_elf_files: false,
     prefer: true,
+    system_ext_specific: true,
 }
 
 cc_prebuilt_library_shared {
@@ -72,6 +74,7 @@ cc_prebuilt_library_shared {
     compile_multilib: "64",
     check_elf_files: false,
     prefer: true,
+    system_ext_specific: true,
 }
 
 cc_prebuilt_library_shared {
@@ -86,6 +89,7 @@ cc_prebuilt_library_shared {
     compile_multilib: "64",
     check_elf_files: false,
     prefer: true,
+    system_ext_specific: true,
 }
 
 cc_prebuilt_library_shared {
@@ -100,28 +104,33 @@ cc_prebuilt_library_shared {
     compile_multilib: "64",
     check_elf_files: false,
     prefer: true,
+    system_ext_specific: true,
 }
 
 java_import {
     name: "vendor.aospa.biometrics.face.impl",
     jars: ["lib/vendorImplPrebuilt.jar"],
     sdk_version: "current",
+    system_ext_specific: true,
 }
 
 prebuilt_etc {
     name: "default_permissions_co.aospa.sense.xml",
     src: "permissions/default_permissions_co.aospa.sense.xml",
     sub_dir: "default-permissions",
+    system_ext_specific: true,
 }
 
 prebuilt_etc {
     name: "hiddenapi-whitelist-co.aospa.sense.xml",
     src: "permissions/hiddenapi-whitelist-co.aospa.sense.xml",
     sub_dir: "sysconfig",
+    system_ext_specific: true,
 }
 
 prebuilt_etc {
     name: "privapp_whitelist_co.aospa.sense.xml",
     src: "permissions/privapp_whitelist_co.aospa.sense.xml",
     sub_dir: "permissions",
+    system_ext_specific: true,
 }
